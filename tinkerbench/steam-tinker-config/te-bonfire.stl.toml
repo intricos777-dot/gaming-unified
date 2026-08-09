@@ -1,0 +1,14 @@
+[game]
+name = "TE Bonfire"
+exe = "te-bonfire"
+args = "--sim"
+env = { LD_LIBRARY_PATH = "$PWD/../../engines/twilight-elysium/build" }
+
+[video]
+fullscreen = false
+vsync = true
+resolution = "1280x720"
+
+[debug]
+overlay = true
+sim_mode = true

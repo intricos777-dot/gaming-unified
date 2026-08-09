@@ -1,0 +1,10 @@
+{
+  "project": "loz",
+  "roles": {
+    "viewer": ["read"],
+    "developer": ["read", "build"],
+    "admin": ["*"]
+  },
+  "default_role": "viewer",
+  "audit_log": "logs/bde-audit.log"
+}

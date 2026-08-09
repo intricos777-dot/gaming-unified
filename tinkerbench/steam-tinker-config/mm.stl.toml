@@ -1,0 +1,18 @@
+[game]
+name = "Majora's Mask Remake"
+exe = "mm"
+args = ""
+env = { LD_LIBRARY_PATH = "$PWD/../../engines/twilight-elysium/build" }
+
+[video]
+fullscreen = true
+vsync = true
+resolution = "1920x1080"
+
+[timecycle]
+speed = 1.0
+debug_hour = 12
+
+[controller]
+remap_roll = "R1"
+remap_jump = "A"

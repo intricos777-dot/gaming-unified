@@ -1,0 +1,24 @@
+{
+  "name": "quantum-enochian",
+  "version": "1.0.0",
+  "description": "Enochian RSA \u2014 quantum-inspired asymmetric encryption rooted in the 49 Calls and 30 Aethyrs",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": {
+    "enochian": "./src/cli.js",
+    "layered": "./src/layered-cli.js"
+  },
+  "scripts": {
+    "keygen": "node src/cli.js keygen",
+    "encrypt": "node src/cli.js encrypt",
+    "decrypt": "node src/cli.js decrypt",
+    "apply": "node src/apply.js",
+    "layered:status": "node src/layered-cli.js status",
+    "layered:seal": "node src/layered-cli.js seal",
+    "layered:unseal": "node src/layered-cli.js unseal",
+    "layered:keygen": "node src/layered-cli.js keygen"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}

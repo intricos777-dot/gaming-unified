@@ -1,0 +1,12 @@
+[game]
+name = "Ship of Harkinian (OoT MQ)"
+exe = "soh"
+args = "--profile oot-mq"
+env = { SDL_GAMECONTROLLERCONFIG_FILE = "$PWD/../../../mods/ship-of-harkinian/gamecontrollerdb.txt" }
+
+[video]
+fullscreen = true
+resolution = "1920x1080"
+
+[controller]
+database = "gamecontrollerdb.txt"

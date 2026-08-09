@@ -1,0 +1,11 @@
+[game]
+name = "Oblivion (ModOrganizer)"
+exe = "modorganizer"
+args = "--run oblivion"
+env = { MO2_PROFILE = "Oblivion-Display-Tweaks" }
+
+[video]
+fullscreen = true
+
+[mods]
+load_order = "modorganizer/plugins.txt"

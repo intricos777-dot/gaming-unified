@@ -1,0 +1,59 @@
+{
+  "updated_at": "2026-08-09T01:34:11.993097+00:00",
+  "agents": {},
+  "active_torches": [
+    {
+      "task_id": "task-30",
+      "project": "loz-majoras-mask",
+      "assignee": "opencode",
+      "status": "in_progress",
+      "updated_at": "2026-08-09T01:34:02.468954+00:00",
+      "context": "guardian flagged; build exists; needs engine/renderer audit"
+    }
+  ],
+  "completed": [],
+  "pending_queue": [
+    {
+      "task_id": "task-31",
+      "project": "loz-majoras-mask",
+      "description": "guardian: loz-majoras-mask needs attention",
+      "assignee": null
+    },
+    {
+      "task_id": "task-32",
+      "project": "kingdom-hearts-zero",
+      "description": "finish command deck real rendering + polish",
+      "assignee": null
+    },
+    {
+      "task_id": "task-33",
+      "project": "ringworld-redux",
+      "description": "renderer polish + asset pipeline hardening",
+      "assignee": null
+    },
+    {
+      "task_id": "task-34",
+      "project": "spacecraft-blueprint-simulator",
+      "description": "GA convergence tuning + report formatting",
+      "assignee": null
+    },
+    {
+      "task_id": "task-35",
+      "project": "firedragon",
+      "description": "binary packaging + CI hardening",
+      "assignee": null
+    },
+    {
+      "task_id": "task-36",
+      "project": "code-theft-evidence",
+      "description": "expand monitor to Lilith-Systems org repos",
+      "assignee": null
+    },
+    {
+      "task_id": "task-37",
+      "project": "lia-cli",
+      "description": "task tracker sync + agent handoff protocol",
+      "assignee": null
+    }
+  ]
+}

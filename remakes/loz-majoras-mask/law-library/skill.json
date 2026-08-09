@@ -1,0 +1,77 @@
+{
+  "name": "law-library",
+  "version": "1.0.0",
+  "description": "Federal & State Law Library - Legal research tool for searching statutes, regulations, and case law",
+  "author": "sin",
+  "endpoints": {
+    "search": {
+      "method": "GET",
+      "url": "http://localhost:4130/search",
+      "params": {
+        "q": {"type": "string", "required": true, "description": "Search query"},
+        "type": {"type": "string", "default": "all", "enum": ["all", "statutes", "cases", "legislation", "state"]},
+        "state": {"type": "string", "description": "State code (e.g., CA, TX, NY)"},
+        "court": {"type": "string", "description": "Court filter (e.g., scotus, ca9)"},
+        "title": {"type": "number", "description": "U.S. Code title number"}
+      }
+    },
+    "cite": {
+      "method": "GET",
+      "url": "http://localhost:4130/cite/{citation}",
+      "params": {
+        "citation": {"type": "string", "required": true, "description": "Legal citation (e.g., 42 U.S.C. § 1983)"}
+      }
+    },
+    "topics": {
+      "method": "GET",
+      "url": "http://localhost:4130/topics"
+    },
+    "sources": {
+      "method": "GET",
+      "url": "http://localhost:4130/sources"
+    },
+    "state": {
+      "method": "GET",
+      "url": "http://localhost:4130/state",
+      "params": {
+        "code": {"type": "string", "description": "State code (e.g., CA, TX, NY)"}
+      }
+    },
+    "chat": {
+      "method": "POST",
+      "url": "http://localhost:4130/chat",
+      "body": {
+        "message": {"type": "string", "required": true, "description": "Natural language legal question"}
+      }
+    }
+  },
+  "triggers": [
+    "search law", "find statute", "look up case", "legal research",
+    "state law", "federal law", "case law", "constitution",
+    "criminal law", "civil law", "business law", "family law",
+    "what does the law say", "show me the statute", "legal citation"
+  ],
+  "examples": [
+    {
+      "input": "search law negligence",
+      "output": "Searches federal statutes and case law for 'negligence'"
+    },
+    {
+      "input": "find California labor law",
+      "output": "Searches California state statutes for labor law"
+    },
+    {
+      "input": "look up 42 U.S.C. 1983",
+      "output": "Looks up civil rights statute by citation"
+    },
+    {
+      "input": "what does the law say about self defense",
+      "output": "Natural language search across all databases"
+    }
+  ],
+  "config": {
+    "api_url": "http://localhost:4130",
+    "requires_api_key": false,
+    "rate_limit": "None (local database + free APIs)"
+  }
+}

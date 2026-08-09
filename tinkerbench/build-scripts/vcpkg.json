@@ -1,0 +1,19 @@
+{
+  "name": "gaming-unified",
+  "version": "1.0.0",
+  "dependencies": [
+    "sdl2",
+    "sdl2-image",
+    "sdl2-mixer",
+    "sdl2-ttf",
+    "glm",
+    "fmt",
+    "spdlog",
+    "nlohmann-json",
+    "yaml-cpp",
+    "imgui",
+    "entt",
+    "gtest"
+  ],
+  "builtin-baseline": "2024.01.15"
+}

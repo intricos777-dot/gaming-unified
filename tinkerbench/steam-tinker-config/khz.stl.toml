@@ -1,0 +1,19 @@
+[game]
+name = "Kingdom Hearts Zero"
+exe = "khz-combat-test"
+args = ""
+env = { LD_LIBRARY_PATH = "$PWD/../engines/twilight-elysium/build" }
+
+[video]
+fullscreen = false
+vsync = true
+resolution = "1280x720"
+scaler_mode = 0
+
+[controller]
+device = "auto"
+deadzone = 0.15
+
+[debug]
+overlay = true
+fps_cap = 60

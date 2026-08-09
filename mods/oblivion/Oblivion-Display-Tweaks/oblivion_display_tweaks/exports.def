@@ -1,0 +1,4 @@
+LIBRARY	"oblivion_display_tweaks"
+EXPORTS
+OBSEPlugin_Query
+OBSEPlugin_Load

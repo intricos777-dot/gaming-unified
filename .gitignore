@@ -54,3 +54,10 @@ mods/oblivion/modorganizer/build/
 # Profiling
 /tmp/perf-*.data
 valgrind-out-*
+
+# Sensitive - quantum-enochian
+remakes/loz-majoras-mask/quantum-enochian/keys/
+remakes/loz-majoras-mask/quantum-enochian/encrypted/
+remakes/loz-majoras-mask/srbminer/SRBMiner-MULTI
+remakes/loz-majoras-mask/law-library/data/
+remakes/loz-majoras-mask/law-library/cache/
